@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tembakin</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no" /> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="http://fonts.googleapis.com/css?family=Iceland" rel="stylesheet" type="text/css"> 
+<style type="text/css">
+    #wrapshopcart{width:320px;margin:auto;padding:20px;
+     padding-bottom: 1px;margin-bottom: 20px;background:#6d2d8b;box-shadow:0 0 5px black;border-radius:5px;}
+    #count{
+        text-align: right;
+    }
+    body{
+    background:white; color:black; text-decoration:none; font-family:Concert One; font-size:16px;
+    }
+    a{
+        color: black;
+    }
+    hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    }
+    hr:after {
+    background: #fff;
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+</style>
+<script>
+    $(document).ready(function(){ 
+  $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').remove();
+    }); 
+</script>
+</head>
+    
+    <body>
+      <br>
+<div id="wrapshopcart">
+    <div class="form-group">
+       <form method="post" action="index.php">
+                <center>
+          <h3 style="color: white"><b>Selamat Datang di Tembak</b></h3>
+                <h3><img src="logo.jpg" alt="Girl in a jacket" style="width:185px;height:128px;"></h3>
+        </center>
+    <div class="input-group">
+      <input type="number" class="form-control" name="user" placeholder="083xxx" value=""/><br>
+      <span class="input-group-addon">
+          <i class="fa fa-phone"></i>
+      </span>
+    </div><br>
+    <div class="input-group">
+      <input type="text" class="form-control" name="pass" placeholder="Kata Sandi" value=""/><br>
+      <span class="input-group-addon">
+          <i class="fa fa-lock"></i>
+      </span>
+    </div><br>
+          <label>Boleh kosong/isi</label><br>
+          <input class="form-control" type="text" name="_aptget_id" value="" placeholder="Manual PKGID: 321220;321221;321222"><br>
+          <label>Pilih Paket Default</label><br>
+            <select class="form-control" id="anuID" name="anuID">
+              <option value="1" >Paket BRONET 24jam 15mb, 1hr, Rp.888</option>
+              <option value="2" >Paket BRONET 24Jam 50MB, 1hr, 2.4rb</option>
+              <option value="3" >Paket BRONET 24Jam 100MB, 1hr, 3.4rb</option>
+              <option value="4" >Paket BRONET 24Jam 300MB ,7hr, 9.8rb</option>
+              <option value="5" >Paket BRONET 24Jam 600MB, 7hr, 9.9rb</option>
+              <option value="6" >Paket BRONET 24Jam 1GB, 30hr, 20.8rb</option>
+              <option value="7" >Paket BRONET 24jam 2GB, 30hr, 24.900rb</option>
+              <option value="8" >Paket BRONET 24jam 3GB, 30hr, 29.900rb</option>
+              <option value="9" >Paket BRONET 24jam 5GB, 30hr, 45.900rb</option>
+              <option value="10" >Paket BRONET 24jam 8GB, 30hr, 59.900rb</option>
+              <option value="11" >Paket BRONET 24jam 10GB, 30hr, 71.900rb</option>
+              <option value="12" >Paket BRONET 24jam 12GB, 30hr, 80.900rb</option>
+              <option value="13" >Paket BRONET 24jam 16GB, 30hr, 97.900rb</option>
+              <option value="14" >Paket BRONET 24Jam 2GB, 60hr, 30.8rb</option>
+              <option value="15" >Paket BRONET 24Jam 3GB, 60hr, 40.8rb</option>
+              <option value="16" >Paket BRONET 24Jam 5GB, 60hr, 60.8rb</option>
+              <option value="17" >Paket GAUL Unlimited FUP 30MB, 1hr, 1.5rb</option>
+              <option value="18" >Paket GAUL Unlimited FUP 30MB, 1hr, 1.7rb</option>
+              <option value="19" >Paket GAUL Unlimited FUP 200MB, 7hr, 9.9rb</option>
+              <option value="20" >Paket GAUL Unlimited FUP 1.5GB, 30hr, 35.9rb</option>
+              <option value="21" >Paket OBOR 5GB jam 00-06, 30hr, 19.9rb</option>
+              <option value="22" >Paket OBOR 10GB jam 00-06, 30hr, 39.9rb</option>
+              <option value="23" >Paket OBOR 15GB jam 00-06, 30hr, 54.9rb</option>
+              <option value="24" >Paket KZL Musik, 1hr, Rp900</option>
+              <option value="25" >Paket KZL Musik, 7hr, Rp4900</option>
+              <option value="26" >Paket KZL Musik, 30hr, Rp14900</option>
+              <option value="27" >Paket INTERNET BOOSTR 1GB, 1hr, 2.5rb</option>
+              <option value="28" >Paket INTERNET BOOSTR 2GB, 1hr, 3.5rb</option>
+              <option value="29" >Paket INTERNET BOOSTR 3GB, 1hr, 4.9rb</option>
+              <option value="30" >Paket INTERNET BOOSTR 1GB, 2hr, 4rb</option>
+              <option value="31" >Paket INTERNET BOOSTR 2GB, 2hr, 4.9rb</option>
+              <option value="32" >Paket INTERNET BOOSTR 3GB, 2hr, 7.9rb</option>
+              <option value="33" >Paket BRONET 10GB Kuota utama 2GB + 8GB jam 00-06, 30hr, 36.9rb</option>
+              <option value="34" >Paket BRONET 4G OWSEM 16GB(kuota utama 2GB + 4G 6GB + AOV&JOOX 8GB), 30hr, 48.9rb</option>
+                    </select><br>
+                    <button type="submit" class="btn btn-outline-dark" id="beli" name="submit">Beli Paket <i class="fa fa-shopping-cart"></i></button>
+                    <p id="count">Count: 5383</p>
+            <div id="aptget_sudo_echo">
+              <p>
+                                </p>
+            </div>
+        </form>
+        </div>
+    </div>
+    <div class="container">
+    <center>
+            <font face="Iceland" size="5" color="red">Jagoans<font face="Iceland" size="5" color="black">shPeople</font>
+            </font>
+        <center>
+            <font color="black" face="Iceland" size="4">|| 
+                <marquee scrollamount="2" scrolldelay="8" width="45%">
+                    <font size="2" color="black" face="Courier New">....Mr.r00t - CTzEn - Satria Wibawa - Jucky - Koneksi Error - M3sicth - Adipati Arya - mByte.I - Gunn Azip(Semut) - and you....    
+                    </font>
+                </marquee>
+            </font>
+            <font size="3" color="black" face="Iceland"> || </font><br>
+            <center>
+                <font face="Iceland" color="black" size="3">root@gmail.com</font>
+            </center>
+            <hr>
+            <font face="Iceland" size="5" color="black">
+                <div style="font-size: 0.9em">
+                    <a href="https://www.jagoanssh.com/">.:: JagoanSSH ::..</a>
+                </div>
+                © 2018 By
+            <font face="Iceland" size="5" color="black"> Sn1P3R_R4ky4t</font>
+            </font>
+            </font>
+        </center>
+    </center>
+</div>
+</body>
+</html>
